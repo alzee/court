@@ -1,0 +1,31 @@
+body {
+    background-color: #9ccadc;
+}
+
+nav#nav-menu {
+    background-color: #1585b7;
+}
+
+li.list-group-item {
+    background-color: #d4e1e6;
+}
+
+.block-title {
+    background: #c1e2ef;
+    font-size: 1.4em;
+    padding: 0.3em 0;
+}
+
+li.list-group-item {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news-block{
+    background-color: #d4e1e6;
+}
+
+.news-block li.list-group-item {
+    border: 0;
+}
