@@ -1,5 +1,6 @@
 body {
-    background-color: #9ccadc;
+	background-color: #0093E9;
+	background-image: linear-gradient(160deg, #0093E9 0%, #93d9ec 41%);
 }
 
 nav#nav-menu {
@@ -11,7 +12,8 @@ li.list-group-item {
 }
 
 .block-title {
-    background: #c1e2ef;
+  background: rgb(9,181,210);
+  background: linear-gradient(94deg, rgba(9,181,210,1) 25%, rgba(168,239,251,1) 48%);
     font-size: 1.4em;
     padding: 0.3em 0;
 }
@@ -28,4 +30,8 @@ li.list-group-item {
 
 .news-block li.list-group-item {
     border: 0;
+}
+
+.border-top-red {
+	border-top: .4em solid #dc3545!important;
 }
