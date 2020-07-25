@@ -1,5 +1,6 @@
 web/*
 vendor/
 !web/css/
+!web/img/
 !web/themes/
 !web/index.html
