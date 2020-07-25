@@ -12,8 +12,16 @@
     <link rel="stylesheet" type="text/css" media="" href="css/main.css">
   </head>
   <body class="container py-4">
-    <header class="mb-1">
-      <img src="img/500x80.png">
+    <header class="row mb-1 align-items-end">
+      <div class="col">
+        <img src="img/500x80.png">
+      </div>
+      <div class="col-auto" id="search-bar">
+        <input type="text">
+        </input>
+        <input type="submit" value="搜索">
+        </input>
+      </div>
     </header>
 
     <nav id="nav-menu" class="bg-primary">
@@ -32,6 +40,7 @@
         <li class="nav-item"><a class="nav-link text-light" href="#">简报信息</a></li>
       </ul>
     </nav>
+    <!--
     <nav class="navbar">
       <div id="nav-date" class="navbar-nav">
         2020年7月16日 星期四
@@ -43,6 +52,7 @@
         </input>
       </div>
     </nav>
+    -->
 
     <div class="my-1" id="banner">
       <img class="img-fluid" src="img/1200x90.png">
