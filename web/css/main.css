@@ -35,3 +35,7 @@ li.list-group-item {
 .border-top-red {
 	border-top: .4rem solid #dc3545!important;
 }
+
+.link-more {
+	font-size: .7em;
+}
