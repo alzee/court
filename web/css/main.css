@@ -12,8 +12,8 @@ li.list-group-item {
 }
 
 .block-title {
-background: rgb(9,142,210);
-background: linear-gradient(94deg, rgba(9,142,210,1) 25%, rgba(168,228,251,1) 44%);
+	background: rgb(9,142,210);
+	background: linear-gradient(94deg, rgba(9,142,210,1) 25%, rgba(168,228,251,1) 44%);
     font-size: 1.4em;
     padding: 0.3em 0;
 }
@@ -33,5 +33,5 @@ li.list-group-item {
 }
 
 .border-top-red {
-	border-top: .4em solid #dc3545!important;
+	border-top: .4rem solid #dc3545!important;
 }
