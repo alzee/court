@@ -8,7 +8,9 @@ nav#nav-menu {
 }
 
 li.list-group-item {
+  /*
     background-color: #d4e1e6;
+    */
 }
 
 .block-title {
@@ -25,7 +27,10 @@ li.list-group-item {
 }
 
 .news-block{
+  /*
     background-color: #d4e1e6;
+    */
+    background-color: #fff;
 }
 
 .news-block li.list-group-item {
@@ -38,4 +43,22 @@ li.list-group-item {
 
 .link-more {
 	font-size: .7em;
+}
+
+div.col,
+div.col-2,
+div.col-auto,
+img.col,
+figure.col{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.row {
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+a.col.btn {
+  font-size: .9em;
 }

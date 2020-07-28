@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keyword" content="">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="" href="css/main.css">
+  </head>
+  <body class="container py-4">
+    <header class="mb-1">
+        <img class="img-fluid" src="img/1200x90.png">
+    </header>
+{{ include('nav.html.twig')}}
+    <main class="mt-1">
+      <section class="row mb-1" id="slider">
+        <div class="col">
+          <img class="img-fluid rounded" src="img/600x400.png">
+        </div>
+        <div class="col">
+{{ include('title.html.twig', {title: '本院动态'}) }}
+
+{{ include('list.html.twig', {ulClass: 'font-weight-bold', count: 4, isNew: 1}) }}
+
+{{ include('list.html.twig', {ulClass: 'border-top border-primary', count: 6}) }}
+        </div>
+      </section>
+
+      <section class="mx-0 row mb-1 px-0" id="">
+        <div class="row">
+          <div class="col" id="">
+{{ include('title.html.twig', {title: '通知'}) }}
+{{ include('list.html.twig', {count: 4}) }}
+          </div>
+          <div class="col" id="">
+{{ include('title.html.twig', {title: '公告'}) }}
+{{ include('list.html.twig', {count: 4}) }}
+          </div>
+          <div class="col-2" id="">
+{{ include('title.html.twig', {title: '今日菜谱', noMore: 1, haveRedBar: 1}) }}
+{{ include('list.html.twig', {count: 4}) }}
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-1" id="banner">
+        <img class="img-fluid" src="img/1200x90.png">
+      </section>
+
+      <section class="row mb-1" id="aboutus">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+{{ include('title.html.twig', {title: '法院文件'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+            <div class="col">
+{{ include('title.html.twig', {title: '党建专栏'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+{{ include('title.html.twig', {title: '审判管理'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+            <div class="col">
+{{ include('title.html.twig', {title: '执行动态'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div>
+{{ include('title.html.twig', {title: '现任院长', noMore: 1, haveRedBar: 1}) }}
+            <figure class="text-center mb-0">
+              <img class="figure-img img-fluid rounded" src="img/130x150.png">
+              <figcaption class="figure-caption">党委书记、院长</figcaption>
+            </figure>
+          </div>
+
+          <div>
+{{ include('title.html.twig', {title: '法院概况', noMore: 1, haveRedBar: 1}) }}
+            <figure class="text-center mb-0">
+              <img class="figure-img img-fluid rounded" src="img/150x130.png">
+              <figcaption class="figure-caption">党委书记、院长</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mx-0 my-1" id="pics">
+        <div class="overflow-hidden">
+{{ include('title.html.twig', {title: '图说法院'}) }}
+{{ include('gallery.html.twig', {haveCaption: 1}) }}
+        </div>
+      </section>
+
+      <section class="row mb-1" id="aboutus">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+{{ include('title.html.twig', {title: '工作动态'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+            <div class="col">
+{{ include('title.html.twig', {title: '信息简报'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+{{ include('title.html.twig', {title: '廉政专栏'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+            <div class="col">
+{{ include('title.html.twig', {title: '法院文化'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+{{ include('title.html.twig', {title: '办公业务平台', noMore: 1, haveRedBar: 1}) }}
+            <div class="">
+              <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+              <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+              <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+              <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+            </div>
+            <div class="row wtf">
+              <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+              <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+            </div>
+            <div class="row wtf">
+              <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+              <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+            </div>
+            <div class="mt-1">
+              <img class="img-fluid" src="img/180.png">
+            </div>
+        </div>
+      </section>
+
+      <section class="row mx-0 my-1" id="row-7">
+        <div>
+{{ include('title.html.twig', {title: '摄影展览'}) }}
+{{ include('gallery.html.twig') }}
+        </div>
+      </section>
+
+      <section class="row mx-0 my-1" id="row-8">
+        <div class="col px-0">
+{{ include('title.html.twig', {title: '相关链接', noMore: 1}) }}
+{{ include('links.html.twig') }}
+
+        </div>
+      </section>
+
+      <section class="border-top-red" style="">
+      </section>
+
+    </main>
+
+    <footer class="my-5">
+      <div class="row justify-content-center text-black-50">
+        <span>
+          XXXXXXXX主办　XXXXXXXX承办　版权所有：XXXXXX 鄂ICP备00000000号-0　鄂公网安备 00000000000000号
+        </span>
+        <div>
+          <div class="row justify-content-center text-black-50">
+            <span>
+              电话：0000-0000000　网站建设及维护：0000-0000000　邮箱：abc@a.com　网站标识码：0000000000)
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src=""></script>
+
+    <noscript></noscript>
+  </body>
+</html>
+
+<!--
+  vim:ft=html ts=2 sw=2
+-->
+
