@@ -30,21 +30,23 @@
         </div>
       </section>
 
-      <section class="mx-0 row mb-1 px-0" id="">
-        <div class="row">
-          <div class="col" id="">
+      <section class="row mb-1 px-0">
+          <div class="col">
+            <div class="row">
+              <div class="col">
 {{ include('title.html.twig', {title: '通知'}) }}
 {{ include('list.html.twig', {count: 4}) }}
-          </div>
-          <div class="col" id="">
+              </div>
+              <div class="col">
 {{ include('title.html.twig', {title: '公告'}) }}
 {{ include('list.html.twig', {count: 4}) }}
+              </div>
+            </div>
           </div>
-          <div class="col-2" id="">
+          <div class="col-3">
 {{ include('title.html.twig', {title: '今日菜谱', noMore: 1, haveRedBar: 1}) }}
 {{ include('list.html.twig', {count: 4}) }}
           </div>
-        </div>
       </section>
 
       <section class="mb-1" id="banner">
@@ -59,11 +61,24 @@
 {{ include('list.html.twig', {count: 6}) }}
             </div>
             <div class="col">
-{{ include('title.html.twig', {title: '党建专栏'}) }}
+{{ include('title.html.twig', {title: '工作动态'}) }}
 {{ include('list.html.twig', {count: 6}) }}
             </div>
           </div>
+        </div>
+        <div class="col-3">
+          <div>
+{{ include('title.html.twig', {title: '现任院长', noMore: 1, haveRedBar: 1}) }}
+            <figure class="text-center mb-0 mt-1">
+              <img class="mb-0 figure-img img-fluid rounded" src="img/274x160.png">
+              <figcaption class="figure-caption">党委书记、院长</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
 
+      <section class="row mb-1" id="aboutus">
+        <div class="col">
           <div class="row">
             <div class="col">
 {{ include('title.html.twig', {title: '审判管理'}) }}
@@ -75,24 +90,14 @@
             </div>
           </div>
         </div>
-
-        <div class="col-2">
-          <div>
-{{ include('title.html.twig', {title: '现任院长', noMore: 1, haveRedBar: 1}) }}
-            <figure class="text-center mb-0">
-              <img class="figure-img img-fluid rounded" src="img/130x150.png">
-              <figcaption class="figure-caption">党委书记、院长</figcaption>
-            </figure>
-          </div>
-
+        <div class="col-3">
           <div>
 {{ include('title.html.twig', {title: '法院概况', noMore: 1, haveRedBar: 1}) }}
-            <figure class="text-center mb-0">
-              <img class="figure-img img-fluid rounded" src="img/150x130.png">
+            <figure class="text-center mb-0 mt-1">
+              <img class="mb-0 figure-img img-fluid rounded" src="img/274x160.png">
               <figcaption class="figure-caption">党委书记、院长</figcaption>
             </figure>
           </div>
-        </div>
       </section>
 
       <section class="row mx-0 my-1" id="pics">
@@ -104,9 +109,9 @@
 
       <section class="row mb-1" id="aboutus">
         <div class="col">
-          <div class="row">
+          <div class="row mb-1">
             <div class="col">
-{{ include('title.html.twig', {title: '工作动态'}) }}
+{{ include('title.html.twig', {title: '党建专栏'}) }}
 {{ include('list.html.twig', {count: 6}) }}
             </div>
             <div class="col">
@@ -115,7 +120,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row mb-1">
             <div class="col">
 {{ include('title.html.twig', {title: '廉政专栏'}) }}
 {{ include('list.html.twig', {count: 6}) }}
@@ -125,9 +130,20 @@
 {{ include('list.html.twig', {count: 6}) }}
             </div>
           </div>
+
+          <div class="row">
+            <div class="col">
+{{ include('title.html.twig', {title: '法庭传真'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+            <div class="col">
+{{ include('title.html.twig', {title: '文明创建'}) }}
+{{ include('list.html.twig', {count: 6}) }}
+            </div>
+          </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-3">
 {{ include('title.html.twig', {title: '办公业务平台', noMore: 1, haveRedBar: 1}) }}
             <div class="">
               <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
@@ -144,7 +160,10 @@
               <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
             </div>
             <div class="mt-1">
-              <img class="img-fluid" src="img/180.png">
+              <img class="img-fluid" src="img/274x186.png">
+            </div>
+            <div class="mt-1">
+              <img class="img-fluid" src="img/274x242.png">
             </div>
         </div>
       </section>
@@ -168,21 +187,7 @@
       </section>
 
     </main>
-
-    <footer class="my-5">
-      <div class="row justify-content-center text-black-50">
-        <span>
-          XXXXXXXX主办　XXXXXXXX承办　版权所有：XXXXXX 鄂ICP备00000000号-0　鄂公网安备 00000000000000号
-        </span>
-        <div>
-          <div class="row justify-content-center text-black-50">
-            <span>
-              电话：0000-0000000　网站建设及维护：0000-0000000　邮箱：abc@a.com　网站标识码：0000000000)
-            </span>
-          </div>
-        </div>
-      </div>
-    </footer>
+{{ include('footer.html.twig') }}
 
     <script src=""></script>
 

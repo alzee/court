@@ -1,6 +1,6 @@
 body {
-	background-color: #0093E9;
-	background-image: linear-gradient(160deg, #0093E9 0%, #93d9ec 41%);
+	background: rgb(175,228,255);
+	background: linear-gradient(94deg, rgba(175,228,255,1) 25%, rgba(233,249,255,1) 67%);
 }
 
 nav#nav-menu {
@@ -47,6 +47,7 @@ li.list-group-item {
 
 div.col,
 div.col-2,
+div.col-3,
 div.col-auto,
 img.col,
 figure.col{
