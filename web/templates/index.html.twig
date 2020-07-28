@@ -15,18 +15,18 @@
     <header class="mb-1">
         <img class="img-fluid" src="img/1200x90.png">
     </header>
-{{ include('nav.html.twig')}}
+      {{ include('nav.html.twig')}}
     <main class="mt-1">
       <section class="row mb-1" id="slider">
         <div class="col">
           <img class="img-fluid rounded" src="img/600x400.png">
         </div>
         <div class="col">
-{{ include('title.html.twig', {title: '本院动态'}) }}
+          {{ include('title.html.twig', {title: '本院动态'}) }}
 
-{{ include('list.html.twig', {ulClass: 'font-weight-bold', count: 4, isNew: 1}) }}
+          {{ include('list.html.twig', {ulClass: 'font-weight-bold', count: 4, isNew: 1}) }}
 
-{{ include('list.html.twig', {ulClass: 'border-top border-primary', count: 6}) }}
+          {{ include('list.html.twig', {ulClass: 'border-top border-primary', count: 6}) }}
         </div>
       </section>
 
@@ -34,18 +34,18 @@
           <div class="col">
             <div class="row">
               <div class="col">
-{{ include('title.html.twig', {title: '通知'}) }}
-{{ include('list.html.twig', {count: 4}) }}
+                {{ include('title.html.twig', {title: '通知'}) }}
+                {{ include('list.html.twig', {count: 4}) }}
               </div>
               <div class="col">
-{{ include('title.html.twig', {title: '公告'}) }}
-{{ include('list.html.twig', {count: 4}) }}
+                {{ include('title.html.twig', {title: '公告'}) }}
+                {{ include('list.html.twig', {count: 4}) }}
               </div>
             </div>
           </div>
           <div class="col-3">
-{{ include('title.html.twig', {title: '今日菜谱', noMore: 1, haveRedBar: 1}) }}
-{{ include('list.html.twig', {count: 4}) }}
+            {{ include('title.html.twig', {title: '今日菜谱', noMore: 1, haveRedBar: 1}) }}
+            {{ include('list.html.twig', {count: 4}) }}
           </div>
       </section>
 
@@ -57,18 +57,18 @@
         <div class="col">
           <div class="row">
             <div class="col">
-{{ include('title.html.twig', {title: '法院文件'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '法院文件'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
             <div class="col">
-{{ include('title.html.twig', {title: '工作动态'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '工作动态'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
           </div>
         </div>
         <div class="col-3">
           <div>
-{{ include('title.html.twig', {title: '现任院长', noMore: 1, haveRedBar: 1}) }}
+            {{ include('title.html.twig', {title: '现任院长', noMore: 1, haveRedBar: 1}) }}
             <figure class="text-center mb-0 mt-1">
               <img class="mb-0 figure-img img-fluid rounded" src="img/274x160.png">
               <figcaption class="figure-caption">党委书记、院长</figcaption>
@@ -81,18 +81,18 @@
         <div class="col">
           <div class="row">
             <div class="col">
-{{ include('title.html.twig', {title: '审判管理'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '审判管理'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
             <div class="col">
-{{ include('title.html.twig', {title: '执行动态'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '执行动态'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
           </div>
         </div>
         <div class="col-3">
           <div>
-{{ include('title.html.twig', {title: '法院概况', noMore: 1, haveRedBar: 1}) }}
+            {{ include('title.html.twig', {title: '法院概况', noMore: 1, haveRedBar: 1}) }}
             <figure class="text-center mb-0 mt-1">
               <img class="mb-0 figure-img img-fluid rounded" src="img/274x160.png">
               <figcaption class="figure-caption">党委书记、院长</figcaption>
@@ -102,8 +102,8 @@
 
       <section class="row mx-0 my-1" id="pics">
         <div class="overflow-hidden">
-{{ include('title.html.twig', {title: '图说法院'}) }}
-{{ include('gallery.html.twig', {haveCaption: 1}) }}
+          {{ include('title.html.twig', {title: '图说法院'}) }}
+          {{ include('gallery.html.twig', {haveCaption: 1}) }}
         </div>
       </section>
 
@@ -111,40 +111,40 @@
         <div class="col">
           <div class="row mb-1">
             <div class="col">
-{{ include('title.html.twig', {title: '党建专栏'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '党建专栏'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
             <div class="col">
-{{ include('title.html.twig', {title: '信息简报'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '信息简报'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
           </div>
 
           <div class="row mb-1">
             <div class="col">
-{{ include('title.html.twig', {title: '廉政专栏'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '廉政专栏'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
             <div class="col">
-{{ include('title.html.twig', {title: '法院文化'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '法院文化'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
           </div>
 
           <div class="row">
             <div class="col">
-{{ include('title.html.twig', {title: '法庭传真'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '法庭传真'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
             <div class="col">
-{{ include('title.html.twig', {title: '文明创建'}) }}
-{{ include('list.html.twig', {count: 6}) }}
+              {{ include('title.html.twig', {title: '文明创建'}) }}
+              {{ include('list.html.twig', {count: 6}) }}
             </div>
           </div>
         </div>
 
         <div class="col-3">
-{{ include('title.html.twig', {title: '办公业务平台', noMore: 1, haveRedBar: 1}) }}
+          {{ include('title.html.twig', {title: '办公业务平台', noMore: 1, haveRedBar: 1}) }}
             <div class="">
               <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
               <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
@@ -170,15 +170,15 @@
 
       <section class="row mx-0 my-1" id="row-7">
         <div>
-{{ include('title.html.twig', {title: '摄影展览'}) }}
-{{ include('gallery.html.twig') }}
+          {{ include('title.html.twig', {title: '摄影展览'}) }}
+          {{ include('gallery.html.twig') }}
         </div>
       </section>
 
       <section class="row mx-0 my-1" id="row-8">
         <div class="col px-0">
-{{ include('title.html.twig', {title: '相关链接', noMore: 1}) }}
-{{ include('links.html.twig') }}
+          {{ include('title.html.twig', {title: '相关链接', noMore: 1}) }}
+          {{ include('links.html.twig') }}
 
         </div>
       </section>
@@ -187,7 +187,8 @@
       </section>
 
     </main>
-{{ include('footer.html.twig') }}
+
+    {{ include('footer.html.twig') }}
 
     <script src=""></script>
 
