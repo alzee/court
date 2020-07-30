@@ -1,9 +1,9 @@
 {%
 set m =
 [
-{text: '首页', link: '#'},
-{text: '法院概况', link: '#'},
-{text: '新闻中心', link: '#'},
+{text: '首页', link: ''},
+{text: '法院概况', link: 'i.php/list1'},
+{text: '新闻中心', link: 'i.php/list'},
 {text: '图片频道', link: '#'},
 {text: '审务公开', link: '#'},
 {text: '队伍建设', link: '#'},
@@ -19,7 +19,7 @@ set m =
     <nav id="nav-menu" class="bg-primary border-top-red">
       <ul class="nav p-2 justify-content-between">
 {% for i in m %}
-        <li class="nav-item rounded"><a class="px-2 nav-link text-light" href="#">{{ i.text }}</a></li>
+        <li class="nav-item rounded"><a class="px-2 nav-link text-light" href="{{ root }}/{{ i.link }}">{{ i.text }}</a></li>
 {% endfor %}
       </ul>
     </nav>

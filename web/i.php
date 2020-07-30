@@ -25,10 +25,16 @@ if (isset($_SERVER['PATH_INFO'])) {
         case 'list':
             $template = $twig->load('list.html.twig');
             break;
+        case 'list1':
+            $template = $twig->load('list1.html.twig');
+            break;
         default:
             $template = $twig->load('index.html.twig');
             break;
     }
+}
+else {
+    $template = $twig->load('index.html.twig');
 }
 
 echo $template->render();

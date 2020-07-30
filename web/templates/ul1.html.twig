@@ -1,0 +1,22 @@
+{% set count = count ? count : 3 %}
+{% set text = '湖北上半年GDP为17480亿元，就业形势总体稳定，农业生产稳步' %}
+
+<ul class="list-group">
+{% for i in 1..count %}
+{% set liClass = "border-0 border-dark" %}
+  {% if i is divisible by(5) %}
+    {% set liClass = "border-bottom mb-5 pb-5" %}
+  {% endif %}
+  {% if i == count %}
+    {% set liClass = "border-0" %}
+  {% endif %}
+  <li class="list-group-item list-group-item-action {{ liClass }} d-flex justify-content-between news-list">
+    <span class="">
+      <a class="text-dark" href="{{ root }}/i.php/node">{{ text }}</a>
+    </span>
+    <span class="text-secondary">
+      2020年7月16日 星期四
+    </span>
+  </li>
+{% endfor %}
+</ul>

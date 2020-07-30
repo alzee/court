@@ -8,8 +8,8 @@ nav#nav-menu {
 }
 
 .block-title {
-background: rgb(85,194,249);
-background: linear-gradient(90deg, rgba(140,216,255,1) 0%, rgba(223,249,255,1) 75%);
+	background: rgb(85,194,249);
+	background: linear-gradient(90deg, rgba(140,216,255,1) 0%, rgba(223,249,255,1) 75%);
     font-size: 1.4em;
     padding: 0.3em 0;
 }
@@ -51,12 +51,6 @@ figure.col{
   margin-right: -3px;
 }
 
-/*
-a.col.btn {
-  font-size: .9em;
-}
-*/
-
 #nav-menu {
 	background: rgb(24,147,212);
 	background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 50%, rgba(24,147,212,1) 100%);
@@ -73,9 +67,9 @@ a.text-light:hover {
 }
 
 .title-text-bg {
-background: rgb(24,147,212);
-background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 35%, rgba(140,216,255,1) 100%);
-background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 35%, rgba(171,227,255,1) 100%);
+	background: rgb(24,147,212);
+	background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 35%, rgba(140,216,255,1) 100%);
+	background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 35%, rgba(171,227,255,1) 100%);
 }
 
 .nav-link {
@@ -83,5 +77,21 @@ background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 35
 }
 
 .dashed-border {
-  border-top: 2px dashed #dc3545;
+	border-top: 2px dashed #dc3545;
+}
+
+.list-group-item-action:hover {
+	background-color: #dff9ff;
+}
+
+li.list-group-item a:hover {
+	text-decoration: none;
+}
+
+.border-bottom {
+	border: 0;
+}
+
+.news-list a {
+	font-size: 1.2em;
 }

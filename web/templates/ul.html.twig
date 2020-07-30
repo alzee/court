@@ -3,8 +3,8 @@
 
 <ul class="list-group {{ ulClass }}">
 {% for i in 1..count %}
-<li class="list-group-item py-1 border-0">
-<span>{{ text }}</span>
+<li class="list-group-item list-group-item-action py-1 border-0">
+<span><a class="text-dark" href="{{ root }}/i.php/node">{{ text }}</a></span>
 {% if isNew %}
 <span class="badge badge-danger">new</span></li>
 {% endif %}
