@@ -1,188 +1,160 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keyword" content="">
-    <title></title>
-    <link rel="stylesheet" type="text/css" media="" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="" href="css/main.css">
-  </head>
-  <body class="container py-4">
-    <header class="mb-1">
-        <img class="img-fluid" src="img/1200x180.png">
-    </header>
-      {{ include('nav.html.twig')}}
-    <main class="mt-1">
-      <section class="mb-1" id="banner">
-        <img class="img-fluid" src="img/1200x90.png">
-      </section>
+{% extends "html.html.twig" %}
 
-      <section class="row mb-1" id="slider">
-        <div class="col">
-          <img class="img-fluid rounded" src="img/600x400.png">
-        </div>
-        <div class="col">
-          {{ include('title.html.twig', {title: '新闻中心'}) }}
+{% block main %}
+  <section class="mb-1" id="banner">
+    <img class="img-fluid" src="img/1200x90.png">
+  </section>
 
-          {{ include('list.html.twig', {ulClass: 'font-weight-bold', count: 4, isNew: 1}) }}
+  <section class="row mb-1" id="slider">
+    <div class="col">
+      <img class="img-fluid rounded" src="img/600x400.png">
+    </div>
+    <div class="col">
+      {{ include('title.html.twig', {title: '新闻中心'}) }}
 
-          {{ include('list.html.twig', {ulClass: 'border-top border-primary', count: 6}) }}
-        </div>
-      </section>
+      {{ include('ul.html.twig', {ulClass: 'font-weight-bold', count: 4, isNew: 1}) }}
 
-      <section class="row mb-1 px-0">
+      <div class="mx-3 dashed-border" style="height: 2px" id=""></div>
+
+      {{ include('ul.html.twig', {count: 6}) }}
+    </div>
+  </section>
+
+  <section class="row mb-1 px-0">
+      <div class="col">
+        <div class="row">
           <div class="col">
-            <div class="row">
-              <div class="col">
-                {{ include('title.html.twig', {title: '通知'}) }}
-                {{ include('list.html.twig', {count: 4}) }}
-              </div>
-              <div class="col">
-                {{ include('title.html.twig', {title: '公告'}) }}
-                {{ include('list.html.twig', {count: 4}) }}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                {{ include('title.html.twig', {title: '法院文件'}) }}
-                {{ include('list.html.twig', {count: 4}) }}
-              </div>
-              <div class="col">
-                {{ include('title.html.twig', {title: '工作动态'}) }}
-                {{ include('list.html.twig', {count: 4}) }}
-              </div>
-            </div>
+            {{ include('title.html.twig', {title: '通知'}) }}
+            {{ include('ul.html.twig', {count: 4}) }}
           </div>
-          <div class="col-3">
-            {{ include('title.html.twig', {title: '办公业务平台', noMore: 1, haveRedBar: 1}) }}
-              <div class="">
-                <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
-                <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
-                <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
-                <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
-              </div>
-              <div class="row">
-                <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-                <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-              </div>
-              <div class="row">
-                <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-                <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-              </div>
-              <div class="row">
-                <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-                <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-              </div>
-          </div>
-      </section>
-
-      <section class="row mb-1 px-0">
           <div class="col">
-            <div class="row">
-              <div class="col">
-                {{ include('title.html.twig', {title: '审判管理'}) }}
-                {{ include('list.html.twig', {count: 5}) }}
-              </div>
-              <div class="col">
-                {{ include('title.html.twig', {title: '执行动态'}) }}
-                {{ include('list.html.twig', {count: 5}) }}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                {{ include('title.html.twig', {title: '案件快报'}) }}
-                {{ include('list.html.twig', {count: 5}) }}
-              </div>
-              <div class="col">
-                {{ include('title.html.twig', {title: '诉讼服务'}) }}
-                {{ include('list.html.twig', {count: 5}) }}
-              </div>
-            </div>
+            {{ include('title.html.twig', {title: '公告'}) }}
+            {{ include('ul.html.twig', {count: 4}) }}
           </div>
-          <div class="col-3">
-            <div>
-              {{ include('title.html.twig', {title: '法院概况', noMore: 1, haveRedBar: 1}) }}
-              {{ include('figure.html.twig', {cap: '法院概述', src: 'img/274x160.png'}) }}
-              {{ include('figure.html.twig', {cap: '党委书记、院长', src: 'img/274x160.png'}) }}
-            </div>
-          </div>
-      </section>
-
-
-      <section class="row mx-0 my-1" id="pics">
-        <div class="overflow-hidden">
-          {{ include('title.html.twig', {title: '图说法院'}) }}
-          {{ include('gallery.html.twig', {haveCaption: 1}) }}
         </div>
-      </section>
+        <div class="row">
+          <div class="col">
+            {{ include('title.html.twig', {title: '法院文件'}) }}
+            {{ include('ul.html.twig', {count: 4}) }}
+          </div>
+          <div class="col">
+            {{ include('title.html.twig', {title: '工作动态'}) }}
+            {{ include('ul.html.twig', {count: 4}) }}
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        {{ include('title.html.twig', {title: '办公业务平台', noMore: 1, haveRedBar: 1}) }}
+          <div class="">
+            <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+            <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+            <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+            <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+          </div>
+          <div class="row">
+            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          </div>
+          <div class="row">
+            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          </div>
+          <div class="row">
+            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          </div>
+      </div>
+  </section>
 
-      <section class="row mb-1" id="aboutus">
+  <section class="row mb-1 px-0">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            {{ include('title.html.twig', {title: '审判管理'}) }}
+            {{ include('ul.html.twig', {count: 5}) }}
+          </div>
+          <div class="col">
+            {{ include('title.html.twig', {title: '执行动态'}) }}
+            {{ include('ul.html.twig', {count: 5}) }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            {{ include('title.html.twig', {title: '案件快报'}) }}
+            {{ include('ul.html.twig', {count: 5}) }}
+          </div>
+          <div class="col">
+            {{ include('title.html.twig', {title: '诉讼服务'}) }}
+            {{ include('ul.html.twig', {count: 5}) }}
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div>
+          {{ include('title.html.twig', {title: '法院概况', noMore: 1, haveRedBar: 1}) }}
+          {{ include('figure.html.twig', {cap: '法院概述', src: 'img/274x160.png'}) }}
+          {{ include('figure.html.twig', {cap: '党委书记、院长', src: 'img/274x160.png'}) }}
+        </div>
+      </div>
+  </section>
+
+
+  <section class="row mx-0 my-1" id="pics">
+    <div class="overflow-hidden">
+      {{ include('title.html.twig', {title: '图说法院'}) }}
+      {{ include('gallery.html.twig', {haveCaption: 1}) }}
+    </div>
+  </section>
+
+  <section class="row mb-1" id="aboutus">
+    <div class="col">
+      <div class="row mb-1">
         <div class="col">
-          <div class="row mb-1">
-            <div class="col">
-              {{ include('title.html.twig', {title: '党建专栏'}) }}
-              {{ include('list.html.twig', {count: 6}) }}
-            </div>
-            <div class="col">
-              {{ include('title.html.twig', {title: '信息简报'}) }}
-              {{ include('list.html.twig', {count: 6}) }}
-            </div>
-          </div>
-
-          <div class="row mb-1">
-            <div class="col">
-              {{ include('title.html.twig', {title: '廉政专栏'}) }}
-              {{ include('list.html.twig', {count: 6}) }}
-            </div>
-            <div class="col">
-              {{ include('title.html.twig', {title: '法院文化'}) }}
-              {{ include('list.html.twig', {count: 6}) }}
-            </div>
-          </div>
+          {{ include('title.html.twig', {title: '党建专栏'}) }}
+          {{ include('ul.html.twig', {count: 6}) }}
         </div>
-
-        <div class="col-3">
-          {{ include('title.html.twig', {title: '视频', noMore: 1, haveRedBar: 1}) }}
-            <div class="mt-1">
-              <img class="img-fluid" src="img/274x186.png">
-            </div>
-              {{ include('list.html.twig', {count: 8}) }}
+        <div class="col">
+          {{ include('title.html.twig', {title: '信息简报'}) }}
+          {{ include('ul.html.twig', {count: 6}) }}
         </div>
-      </section>
+      </div>
 
-      <section class="row mx-0 my-1" id="row-7">
-        <div class="overflow-hidden">
-          {{ include('title.html.twig', {title: '摄影展览'}) }}
-          {{ include('gallery.html.twig') }}
+      <div class="row mb-1">
+        <div class="col">
+          {{ include('title.html.twig', {title: '廉政专栏'}) }}
+          {{ include('ul.html.twig', {count: 6}) }}
         </div>
-      </section>
-
-      <section class="row mx-0 my-1" id="row-8">
-        <div class="col px-0">
-          {{ include('title.html.twig', {title: '相关链接', noMore: 1}) }}
-          {{ include('links.html.twig') }}
-
+        <div class="col">
+          {{ include('title.html.twig', {title: '法院文化'}) }}
+          {{ include('ul.html.twig', {count: 6}) }}
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="border-top-red" style="">
-      </section>
+    <div class="col-3">
+      {{ include('title.html.twig', {title: '视频', noMore: 1, haveRedBar: 1}) }}
+        <div class="mt-1">
+          <img class="img-fluid" src="img/274x186.png">
+        </div>
+          {{ include('ul.html.twig', {count: 8}) }}
+    </div>
+  </section>
 
-    </main>
+  <section class="row mx-0 my-1" id="row-7">
+    <div class="overflow-hidden">
+      {{ include('title.html.twig', {title: '摄影展览'}) }}
+      {{ include('gallery.html.twig') }}
+    </div>
+  </section>
 
-    {{ include('footer.html.twig') }}
+  <section class="row mx-0 my-1" id="row-8">
+    <div class="col px-0">
+      {{ include('title.html.twig', {title: '相关链接', noMore: 1}) }}
+      {{ include('links.html.twig') }}
 
-    <script src=""></script>
+    </div>
+  </section>
 
-    <noscript></noscript>
-  </body>
-</html>
-
-<!--
-  vim:ft=html ts=2 sw=2
--->
-
+  <section class="border-top-red" style="">
+  </section>
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keyword" content="">
+    <title> {% block title %} {% endblock %} </title>
+    <link rel="stylesheet" type="text/css" media="" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="" href="css/main.css">
+  </head>
+  <body class="container py-4">
+    <header class="mb-1">
+      <img class="img-fluid" src="img/1200x180.png">
+    </header>
+      {{ include('nav.html.twig')}}
+    <main class="mt-1">
+      {% block main %}
+      {% endblock %}
+    </main>
+
+    {{ include('footer.html.twig') }}
+
+    <script src=""></script>
+
+    <noscript></noscript>
+  </body>
+</html>
+
+<!--
+  vim:ft=html ts=2 sw=2
+-->
+

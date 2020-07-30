@@ -14,8 +14,8 @@ li.list-group-item {
 }
 
 .block-title {
-	background: rgb(9,142,210);
-	background: linear-gradient(94deg, rgba(9,142,210,1) 25%, rgba(168,228,251,1) 44%);
+background: rgb(85,194,249);
+background: linear-gradient(90deg, rgba(140,216,255,1) 0%, rgba(223,249,255,1) 75%);
     font-size: 1.4em;
     padding: 0.3em 0;
 }
@@ -27,9 +27,6 @@ li.list-group-item {
 }
 
 .news-block{
-  /*
-    background-color: #d4e1e6;
-    */
     background-color: #fff;
 }
 
@@ -65,3 +62,32 @@ a.col.btn {
   font-size: .9em;
 }
 */
+
+#nav-menu {
+	background: rgb(24,147,212);
+	background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 50%, rgba(24,147,212,1) 100%);
+}
+
+.nav-item:hover{
+	background: rgb(125,170,255);
+	background: linear-gradient(180deg, rgba(86,187,241,1) 0%, rgba(24,147,212,1) 50%, rgba(86,187,241,1) 100%);
+}
+
+a.text-light:hover {
+	font-weight: 700;
+	color: white !important;
+}
+
+.title-text-bg {
+background: rgb(24,147,212);
+background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 35%, rgba(140,216,255,1) 100%);
+background: linear-gradient(180deg, rgba(24,147,212,1) 0%, rgba(21,105,157,1) 35%, rgba(171,227,255,1) 100%);
+}
+
+.nav-link {
+	font-size: 1.2em;
+}
+
+.dashed-border {
+  border-top: 2px dashed #dc3545;
+}
