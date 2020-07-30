@@ -28,7 +28,6 @@ if (isset($_SERVER['PATH_INFO'])) {
         default:
             $template = $twig->load('index.html.twig');
             break;
-
     }
 }
 

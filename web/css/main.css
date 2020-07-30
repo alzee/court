@@ -7,12 +7,6 @@ nav#nav-menu {
     background-color: #1585b7;
 }
 
-li.list-group-item {
-  /*
-    background-color: #d4e1e6;
-    */
-}
-
 .block-title {
 background: rgb(85,194,249);
 background: linear-gradient(90deg, rgba(140,216,255,1) 0%, rgba(223,249,255,1) 75%);
