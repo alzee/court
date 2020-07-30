@@ -6,7 +6,7 @@
  * @todo
  */
 
-$autoloader = require_once 'autoload.php';
+require_once 'autoload.php';
 
 
 $loader = new \Twig\Loader\FilesystemLoader('./templates');
@@ -15,6 +15,21 @@ $twig = new \Twig\Environment($loader, [
     'debug' => true,
 ]);
 
-$template = $twig->load('index.html.twig');
+
+if (isset($_SERVER['PATH_INFO'])) {
+    $path = explode("/", trim($_SERVER['PATH_INFO'], '/'));
+    switch ($path[0]) {
+        case 'node':
+            $template = $twig->load('node.html.twig');
+            break;
+        case 'list':
+            $template = $twig->load('list.html.twig');
+            break;
+        default:
+            $template = $twig->load('index.html.twig');
+            break;
+
+    }
+}
 
 echo $template->render();
