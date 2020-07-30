@@ -11,7 +11,7 @@
 <div class="row mt-1">
 {% for i in gallery %}
 <figure class="figure text-center col mb-0">
-<img class="" src="{{ i.src }}">
+<img class="" src="{{ root }}/{{ i.src }}">
 {% if haveCaption %}
 <figcaption class="figure-caption">{{ i.cap }}</figcaption>
 {% endif %}

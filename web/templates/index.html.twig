@@ -2,12 +2,12 @@
 
 {% block main %}
   <section class="mb-1" id="banner">
-    <img class="img-fluid" src="img/1200x90.png">
+    <img class="img-fluid" src="{{ root }}/img/1200x90.png">
   </section>
 
   <section class="row mb-1" id="slider">
     <div class="col">
-      <img class="img-fluid rounded" src="img/600x400.png">
+      <img class="img-fluid rounded" src="{{ root }}/img/600x400.png">
     </div>
     <div class="col">
       {{ include('title.html.twig', {title: '新闻中心'}) }}
@@ -134,7 +134,7 @@
     <div class="col-3">
       {{ include('title.html.twig', {title: '视频', noMore: 1, haveRedBar: 1}) }}
         <div class="mt-1">
-          <img class="img-fluid" src="img/274x186.png">
+          <img class="img-fluid" src="{{ root }}/img/274x186.png">
         </div>
           {{ include('ul.html.twig', {count: 8}) }}
     </div>
