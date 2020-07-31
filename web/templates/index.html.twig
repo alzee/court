@@ -133,10 +133,8 @@
 
     <div class="col-3">
       {{ include('title.html.twig', {title: '视频', noMore: 1, haveRedBar: 1}) }}
-        <div class="mt-1">
-          <img class="img-fluid" src="{{ root }}/img/274x186.png">
-        </div>
-          {{ include('ul.html.twig', {count: 8}) }}
+      {{ include('figure.html.twig', {cap: '视频', src: 'img/274x186.png'}) }}
+      {{ include('ul.html.twig', {count: 7}) }}
     </div>
   </section>
 
