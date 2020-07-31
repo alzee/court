@@ -1,5 +1,5 @@
-fuck:
+css:
   version: VERSION
   css:
-    base:
+    test:
       css/main.css: {}

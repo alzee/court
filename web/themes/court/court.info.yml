@@ -1,0 +1,15 @@
+name: Court
+type: theme
+base theme: false
+core_version_requirement: ^8 | ^9
+version: VERSION
+libraries:
+  - court/global-css
+  - court/global-js
+regions:
+  header: '页眉'
+  breadcrumb: '导航路径'
+  main: '首页主内容'
+  main_node: '文章内容'
+  main_list: '文章列表'
+  footer: '页脚'
