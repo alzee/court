@@ -1,6 +1,7 @@
 body {
 	background: rgb(175,228,255);
 	background: linear-gradient(94deg, rgba(175,228,255,1) 25%, rgba(233,249,255,1) 67%);
+	font-family: Verdana, Arial, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑";
 }
 
 nav#nav-menu {
@@ -97,7 +98,7 @@ li.list-group-item a:hover {
 }
 
 .SimSun {
-  font-family: SimSun;
+  font-family: SimSun, "宋体";
 }
 
 .btn-primary {
