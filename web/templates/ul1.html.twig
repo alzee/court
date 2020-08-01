@@ -3,23 +3,20 @@
 
 <ul class="list-group">
 {% for i in 1..count %}
-{% set liClass = "border-0 border-dark" %}
-  {% if i is divisible by(5) %}
-    {% set liClass = "border-bottom mb-5 pb-5" %}
-  {% endif %}
-  {% if i == count %}
-    {% set liClass = "border-0" %}
-  {% endif %}
-  <li class="list-group-item list-group-item-action {{ liClass }} d-flex justify-content-between news-list">
+  <li class="list-group-item list-group-item-action border-0 d-flex justify-content-between py-2 news-list">
     <div>
       <div class="arrow-right d-inline-block mr-2"></div>
       <span>
         <a class="text-dark" href="{{ root }}/i.php/node">{{ text }}</a>
       </span>
     </div>
-    <span class="text-secondary">
-      2020年7月16日 星期四
-    </span>
+    <span class="text-secondary"> 2020年7月16日 </span>
   </li>
+  {% if i is divisible by(7) %}
+    <div class="border-top border-secondary m-3" style="height: 1px">
+    <span>
+    </span>
+    </div>
+  {% endif %}
 {% endfor %}
 </ul>
