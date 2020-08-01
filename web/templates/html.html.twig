@@ -12,8 +12,13 @@
     <link rel="stylesheet" type="text/css" media="" href="{{ root }}/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="" href="{{ root }}/css/main.css">
   </head>
-  <body class="container py-4">
+  <body class="container py-1">
     <header class="mb-1">
+      <div class="text-right bookmark-menu">
+        <span><a href="#">加入收藏</a></span>
+        <span><a href="#">旧版入口</a></span>
+        <span><a href="#">登录</a></span>
+      </div>
       <img class="img-fluid" src="{{ root }}/img/1200x180.png">
     </header>
       {{ include('nav.html.twig')}}
