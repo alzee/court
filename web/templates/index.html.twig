@@ -7,7 +7,7 @@
 
   <section class="row mb-1" id="slider">
     <div class="col">
-      <img class="img-fluid rounded" src="{{ root }}/img/600x400.png">
+      <img class="img-fluid rounded" src="{{ root }}/img/562x400.png">
     </div>
     <div class="col">
       {{ include('title.html.twig', {title: '新闻中心'}) }}
@@ -45,24 +45,25 @@
       </div>
       <div class="col-3">
         {{ include('title.html.twig', {title: '办公业务平台', noMore: 1, haveRedBar: 1}) }}
-          <div class="">
-            <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
-            <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
-            <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
-            <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
-          </div>
-          <div class="row">
-            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-          </div>
-          <div class="row">
-            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-          </div>
-          <div class="row">
-            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-            <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
-          </div>
+        <div class="">
+          <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+          <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+          <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+          <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+        </div>
+        <div class="row">
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+        </div>
+        <div class="row">
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+        </div>
+        <div class="row">
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+        </div>
+        <img class="img-fluid rounded my-1" src="{{ root }}/img/280x130.png">
       </div>
   </section>
 
@@ -139,8 +140,10 @@
 
     <div class="col-3">
       {{ include('title.html.twig', {title: '视频', noMore: 1, haveRedBar: 1}) }}
-      {{ include('figure.html.twig', {cap: '视频', src: 'img/274x186.png'}) }}
-      {{ include('ul.html.twig', {count: 7}) }}
+      <div class="bg-white px-2 pt-1 rounded">
+        {{ include('figure.html.twig', {cap: '视频', src: 'img/274x186.png'}) }}
+      </div>
+      {{ include('ul.html.twig', {count: 8}) }}
     </div>
   </section>
 
