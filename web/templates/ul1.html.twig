@@ -11,9 +11,12 @@
     {% set liClass = "border-0" %}
   {% endif %}
   <li class="list-group-item list-group-item-action {{ liClass }} d-flex justify-content-between news-list">
-    <span class="">
-      <a class="text-dark" href="{{ root }}/i.php/node">{{ text }}</a>
-    </span>
+    <div>
+      <div class="arrow-right d-inline-block mr-2"></div>
+      <span>
+        <a class="text-dark" href="{{ root }}/i.php/node">{{ text }}</a>
+      </span>
+    </div>
     <span class="text-secondary">
       2020年7月16日 星期四
     </span>
