@@ -103,3 +103,7 @@ li.list-group-item a:hover {
 	border-bottom: 6px solid transparent;
 	border-left: 6px solid green;
 }
+
+.SimSun {
+  font-family: SimSun;
+}
