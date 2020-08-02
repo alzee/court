@@ -1,0 +1,7 @@
+name: CourtAdmin
+type: theme
+base theme: seven
+core_version_requirement: ^8 | ^9
+version: VERSION
+libraries:
+  - admin/css
