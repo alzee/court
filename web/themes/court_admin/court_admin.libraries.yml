@@ -1,5 +1,0 @@
-css:
-  version: VERSION
-  css:
-    test:
-      css/main.css: {}

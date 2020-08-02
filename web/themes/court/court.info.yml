@@ -9,7 +9,7 @@ libraries:
 regions:
   header: '页眉'
   breadcrumb: '导航路径'
-  main: '首页主内容'
-  main_node: '文章内容'
-  main_list: '文章列表'
+  content: '首页主内容'
+  content_node: '文章内容'
+  content_list: '文章列表'
   footer: '页脚'
