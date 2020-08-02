@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if content %}
+  {{ content }}
+{% endif %}
+
+<div class="rounded overflow-hidden mx-0 py-0 block-title justify-content-between">
+  <div class="{{ color }} w-100" style="height: 5px">
+  </div>
+  <div class="row mx-2">
+    <div class="col-auto py-1 px-4 title-text-bg {{ rounded }}">
+      <span class="text-light SimSun font-weight-bold"> {{ title }} </span>
+    </div>
+    <div class="col">
+    </div>
+    <div class="col-auto">
+      {% if not noMore %}
+      <span class="text-primary link-more">更多</span>
+      {% endif %}
+    </div>
+  </div>
+  {#
+  <div class="w-100" style="height: 5px"> </div>
+  #}
+</div>

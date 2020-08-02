@@ -34,8 +34,8 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav id="nav-menu" {{ attributes.addClass('border-top-red mt-1')|without('role', 'aria-labelledby') }}>
+<div {{ attributes }}>
   {% block content %}
     {{ content }}
   {% endblock %}
-</nav>
+</div>

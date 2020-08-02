@@ -10,22 +10,13 @@
     <meta name="keyword" content="">
     <title> {% block title %} {% endblock %} </title>
     <link rel="stylesheet" type="text/css" media="" href="{{ root }}/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="" href="{{ root }}/themes/court/css/main.css">
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
   </head>
   <body class="container py-1">
-    <header class="mb-1">
-      {{ page.header }}
-    </header>
-      {{ page.breadcrubm }}
-    <main class="mt-1">
-      {{ page.content }}
-      {{ page.content_node }}
-      {{ page.content_list }}
-    </main>
-
-    {{ page.footer }}
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
   </body>
 </html>
 
