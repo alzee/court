@@ -48,8 +48,8 @@ figure.col{
 }
 
 .row {
-  margin-left: -3px;
-  margin-right: -3px;
+  margin-left: -3px !important;
+  margin-right: -3px !important;
 }
 
 #nav-menu {
@@ -125,11 +125,11 @@ li.list-group-item a:hover {
   border-color: #dee2e6 !important;
 }
 
-.no-padding-bottom {
+ul.no-padding-bottom {
   padding-bottom: 0 !important;
 }
 
-.no-padding-top {
+ul.no-padding-top {
   padding-top: 0 !important;
 }
 
@@ -161,4 +161,8 @@ li.list-group-item a:hover {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+#block-tiaofu p {
+	margin-bottom: .25rem!important;
 }
