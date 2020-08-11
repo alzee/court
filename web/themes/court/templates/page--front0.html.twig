@@ -1,0 +1,174 @@
+<header>
+  {{ page.header }}
+</header>
+  {{ page.breadcrubm }}
+<main class="mt-1">
+  {{ page.banner }}
+  <section class="row mb-1" id="slider">
+  {#
+    {{ include('/themes/court/templates/block--huandengpian.html.twig') }}
+  #}
+  {{ page.content }}
+    <div class="col">
+      {{ include('/themes/court/templates/title.html.twig', {title: '新闻中心'}) }}
+
+      {{ include('/themes/court/templates/ul.html.twig', {ulClass: 'font-weight-bold no-padding-bottom', count: 4, isNew: 1}) }}
+
+      <div class="mx-3" style="height: 2px" id=""></div>
+
+      {{ include('/themes/court/templates/ul.html.twig', {ulClass: 'no-padding-top', count: 6}) }}
+    </div>
+  </section>
+
+  <section class="row mb-1 px-0">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            {{ include('/themes/court/templates/title.html.twig', {title: '通知'}) }}
+            {{ include('/themes/court/templates/ul.html.twig', {count: 4}) }}
+          </div>
+          <div class="col">
+            {{ include('/themes/court/templates/title.html.twig', {title: '公告'}) }}
+            {{ include('/themes/court/templates/ul.html.twig', {count: 4}) }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            {{ include('/themes/court/templates/title.html.twig', {title: '法院文件'}) }}
+            {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
+          </div>
+          <div class="col">
+            {{ include('/themes/court/templates/title.html.twig', {title: '工作动态'}) }}
+            {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        {{ include('/themes/court/templates/title.html.twig', {title: '办公业务平台', noMore: 1, haveRedBar: 1}) }}
+        <div class="">
+          <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+          <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+          <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+          <a class="btn btn-primary mt-1 d-block">法院信息管理系统</a>
+        </div>
+        <div class="row">
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+        </div>
+        <div class="row">
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+        </div>
+        <div class="row">
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+          <a class="col btn btn-primary mt-1 mx-1">管理系统</a>
+        </div>
+        <img class="img-fluid rounded my-1" src="{{ root }}/img/280x130.png">
+      </div>
+  </section>
+
+  <section class="row mb-1 px-0">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            {{ include('/themes/court/templates/title.html.twig', {title: '审判管理'}) }}
+            {{ include('/themes/court/templates/ul.html.twig', {count: 5}) }}
+          </div>
+          <div class="col">
+            {{ include('/themes/court/templates/title.html.twig', {title: '执行动态'}) }}
+            {{ include('/themes/court/templates/ul.html.twig', {count: 5}) }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            {{ include('/themes/court/templates/title.html.twig', {title: '案件快报'}) }}
+            {{ include('/themes/court/templates/ul.html.twig', {count: 5}) }}
+          </div>
+          <div class="col">
+            {{ include('/themes/court/templates/title.html.twig', {title: '诉讼服务'}) }}
+            {{ include('/themes/court/templates/ul.html.twig', {count: 5}) }}
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        {{ include('/themes/court/templates/title.html.twig', {title: '法院概况', noMore: 1, haveRedBar: 1}) }}
+        <div class="bg-white p-3 rounded">
+          {{ include('/themes/court/templates/figure.html.twig', {cap: '党委书记、院长', src: 'img/274x160.png'}) }}
+          <div class="text-secondary">
+            <p class="text-center font-weight-bold mt-2 mb-0">
+            法院概述
+            </p>
+            <p class="mb-2">　　根据湖北省统计局7月20日公布的数据，上半年，湖北地区生产总值17480.51亿元，按可比价格计算，同比下降19.3%，降幅较一季度收窄19.9个百分点。 分产业看，第一产业增加值1320.98亿元，下降7.9%，降幅较一季度收窄17.4个百分点；
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="row mx-0 my-1" id="pics">
+    <div class="overflow-hidden">
+      {{ include('/themes/court/templates/title.html.twig', {title: '图说法院'}) }}
+      {{ include('/themes/court/templates/gallery.html.twig', {haveCaption: 1}) }}
+    </div>
+  </section>
+
+  <section class="row mb-1" id="aboutus">
+    <div class="col">
+      <div class="row mb-1">
+        <div class="col">
+          {{ include('/themes/court/templates/title.html.twig', {title: '党建专栏'}) }}
+          {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
+        </div>
+        <div class="col">
+          {{ include('/themes/court/templates/title.html.twig', {title: '信息简报'}) }}
+          {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
+        </div>
+      </div>
+
+      <div class="row mb-1">
+        <div class="col">
+          {{ include('/themes/court/templates/title.html.twig', {title: '廉政专栏'}) }}
+          {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
+        </div>
+        <div class="col">
+          {{ include('/themes/court/templates/title.html.twig', {title: '法院文化'}) }}
+          {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      {{ include('/themes/court/templates/title.html.twig', {title: '视频', noMore: 1, haveRedBar: 1}) }}
+      <div class="bg-white px-2 pt-1 rounded">
+        {{ include('/themes/court/templates/figure.html.twig', {cap: '视频', src: 'img/274x186.png'}) }}
+      </div>
+      {{ include('/themes/court/templates/ul.html.twig', {count: 8}) }}
+    </div>
+  </section>
+
+  <section class="row mx-0 my-1" id="row-7">
+    <div class="overflow-hidden">
+      {{ include('/themes/court/templates/title.html.twig', {title: '摄影展览'}) }}
+      {{ include('/themes/court/templates/gallery.html.twig') }}
+    </div>
+  </section>
+
+  <section class="row mx-0 my-1" id="row-8">
+    <div class="col px-0">
+      {{ include('/themes/court/templates/title.html.twig', {title: '相关链接', noMore: 1}) }}
+      {{ include('/themes/court/templates/somelinks.html.twig') }}
+
+    </div>
+  </section>
+
+  <section class="border-top-red" style="">
+  </section>
+</main>
+{{ page.footer }}
+
+
+<!--
+	vim:ft=html
+-->
+

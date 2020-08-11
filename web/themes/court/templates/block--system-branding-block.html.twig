@@ -1,4 +1,3 @@
-{% extends "block.html.twig" %}
 {#
 /**
  * @file
@@ -15,7 +14,7 @@
  * @ingroup themeable
  */
 #}
-{% block content %}
+<div{{ attributes }}>
   {% if site_logo %}
     <a href="{{ path('<front>') }}" rel="home">
       <img class="img-fluid" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
@@ -25,4 +24,4 @@
     <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
   {% endif %}
   {{ site_slogan }}
-{% endblock %}
+</div>

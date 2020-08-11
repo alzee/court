@@ -1,3 +1,4 @@
+{% set root = '/court' %}
 <header>
   {{ page.header }}
 </header>
@@ -5,42 +6,18 @@
 <main class="mt-1">
   {{ page.banner }}
   <section class="row mb-1" id="slider">
-  {#
-    {{ include('/themes/court/templates/block--huandengpian.html.twig') }}
-  #}
-  {{ page.content }}
     <div class="col">
-      {{ include('/themes/court/templates/title.html.twig', {title: '新闻中心'}) }}
-
-      {{ include('/themes/court/templates/ul.html.twig', {ulClass: 'font-weight-bold no-padding-bottom', count: 4, isNew: 1}) }}
-
-      <div class="mx-3" style="height: 2px" id=""></div>
-
-      {{ include('/themes/court/templates/ul.html.twig', {ulClass: 'no-padding-top', count: 6}) }}
+      {{ page.slider }}
+    </div>
+    <div class="col">
+      {{ page.content }}
     </div>
   </section>
 
-  <section class="row mb-1 px-0">
+  <section class="row px-0">
       <div class="col">
-        <div class="row">
-          <div class="col">
-            {{ include('/themes/court/templates/title.html.twig', {title: '通知'}) }}
-            {{ include('/themes/court/templates/ul.html.twig', {count: 4}) }}
-          </div>
-          <div class="col">
-            {{ include('/themes/court/templates/title.html.twig', {title: '公告'}) }}
-            {{ include('/themes/court/templates/ul.html.twig', {count: 4}) }}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            {{ include('/themes/court/templates/title.html.twig', {title: '法院文件'}) }}
-            {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
-          </div>
-          <div class="col">
-            {{ include('/themes/court/templates/title.html.twig', {title: '工作动态'}) }}
-            {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
-          </div>
+        <div class="row row-cols-2">
+          {{ page.content1 }}
         </div>
       </div>
       <div class="col-3">
@@ -67,27 +44,10 @@
       </div>
   </section>
 
-  <section class="row mb-1 px-0">
+  <section class="row px-0">
       <div class="col">
-        <div class="row">
-          <div class="col">
-            {{ include('/themes/court/templates/title.html.twig', {title: '审判管理'}) }}
-            {{ include('/themes/court/templates/ul.html.twig', {count: 5}) }}
-          </div>
-          <div class="col">
-            {{ include('/themes/court/templates/title.html.twig', {title: '执行动态'}) }}
-            {{ include('/themes/court/templates/ul.html.twig', {count: 5}) }}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            {{ include('/themes/court/templates/title.html.twig', {title: '案件快报'}) }}
-            {{ include('/themes/court/templates/ul.html.twig', {count: 5}) }}
-          </div>
-          <div class="col">
-            {{ include('/themes/court/templates/title.html.twig', {title: '诉讼服务'}) }}
-            {{ include('/themes/court/templates/ul.html.twig', {count: 5}) }}
-          </div>
+        <div class="row row-cols-2">
+          {{ page.content2 }}
         </div>
       </div>
       <div class="col-3">
@@ -113,28 +73,10 @@
     </div>
   </section>
 
-  <section class="row mb-1" id="aboutus">
+  <section class="row" id="aboutus">
     <div class="col">
-      <div class="row mb-1">
-        <div class="col">
-          {{ include('/themes/court/templates/title.html.twig', {title: '党建专栏'}) }}
-          {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
-        </div>
-        <div class="col">
-          {{ include('/themes/court/templates/title.html.twig', {title: '信息简报'}) }}
-          {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
-        </div>
-      </div>
-
-      <div class="row mb-1">
-        <div class="col">
-          {{ include('/themes/court/templates/title.html.twig', {title: '廉政专栏'}) }}
-          {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
-        </div>
-        <div class="col">
-          {{ include('/themes/court/templates/title.html.twig', {title: '法院文化'}) }}
-          {{ include('/themes/court/templates/ul.html.twig', {count: 6}) }}
-        </div>
+      <div class="row row-cols-2">
+          {{ page.content4 }}
       </div>
     </div>
 

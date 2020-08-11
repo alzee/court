@@ -89,7 +89,7 @@
         {{ date }}
         </span>
         <span class="mr-5">
-        来源：中国政府网
+        {{ content.field_laiyuan }}
         </span>
         <span>
         作者：{{ author_name }}
@@ -99,9 +99,9 @@
   {% endif %}
 
   <div{{ content_attributes }}>
-    {{ content }}
+    {{ content.body }}
     <div class="text-secondary text-right my-2">
-      <span>责任编辑: XXX </span>
+      <span>{{ content.field_zerenbianji }} </span>
     </div>
   </div>
 

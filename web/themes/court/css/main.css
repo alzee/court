@@ -48,8 +48,8 @@ figure.col{
 }
 
 .row {
-  margin-left: -3px !important;
-  margin-right: -3px !important;
+  margin-left: -3px;
+  margin-right: -3px;
 }
 
 #nav-menu {
@@ -91,6 +91,14 @@ li.list-group-item a:hover {
 }
 
 .news-list a:hover {
+	color: #121416!important;
+}
+
+li a {
+	color: #343a40!important;
+}
+
+li a:hover {
 	color: #121416!important;
 }
 
