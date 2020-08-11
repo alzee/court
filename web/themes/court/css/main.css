@@ -94,11 +94,11 @@ li.list-group-item a:hover {
 	color: #121416!important;
 }
 
-li a {
+.col li a {
 	color: #343a40!important;
 }
 
-li a:hover {
+.col li a:hover {
 	color: #121416!important;
 }
 
