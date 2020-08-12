@@ -2,9 +2,12 @@ global-css:
   version: VERSION
   css:
     theme:
-      css/main.css: {}
+      css/bootstrap.min.css: {}
+      css/swiper-bundle.min.css: {}
+      css/z.css: {}
 
 global-js:
   version: VERSION
   js:
-    js/main.js: {}
+    js/swiper-bundle.min.js: {}
+    js/z.js: {}

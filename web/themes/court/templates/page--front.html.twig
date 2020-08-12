@@ -83,7 +83,9 @@
     <div class="col-3">
       {{ include('/themes/court/templates/title.html.twig', {title: '视频', noMore: 1, haveRedBar: 1}) }}
       <div class="bg-white px-2 pt-1 rounded">
-        {{ include('/themes/court/templates/figure.html.twig', {cap: '视频', src: 'img/274x186.png'}) }}
+        <video controls width="257" height="174">
+          <source src="/court/sites/default/files/2020-08/video_1.mp4" type="video/mp4">
+        </video>
       </div>
       {{ include('/themes/court/templates/ul.html.twig', {count: 8}) }}
     </div>

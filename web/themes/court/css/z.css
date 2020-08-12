@@ -190,3 +190,8 @@ img {
 #block-tiaofu p {
 	margin-bottom: .25rem!important;
 }
+
+.swiper-container {
+    width: 600px;
+    height: 400px;
+}
