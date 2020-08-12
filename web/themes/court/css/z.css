@@ -206,3 +206,13 @@ img {
     height: 3em;
     bottom: 0;
 }
+
+/*
+.views-element-container li a {
+	display: inline-block;
+	max-width: 88%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: bottom;
+}
+*/
