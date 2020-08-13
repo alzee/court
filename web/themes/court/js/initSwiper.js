@@ -1,3 +1,4 @@
+/*
 function getSlides() {
   let xhr = new XMLHttpRequest();
   let url = '/court/slider?_format=json';
@@ -5,7 +6,6 @@ function getSlides() {
     if(xhr.readyState === XMLHttpRequest.DONE){
       if(xhr.status === 200){
   		initSlides(xhr.response);
-		initSwiper();
       }
     }
   };
@@ -32,6 +32,7 @@ function initSlides(slides) {
   }
   slide.remove();
 }
+*/
 
 function initSwiper() {
   var swiper = new Swiper('#slider', {
@@ -53,5 +54,3 @@ function initSwiper() {
     },
   })
 }
-
-getSlides();
