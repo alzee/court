@@ -165,7 +165,6 @@ ul.no-padding-top {
 	display: inline-block;
 	animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
 	infinite alternate;
-	float: left;
 }
 
 @keyframes bopB {
@@ -183,9 +182,8 @@ ul.no-padding-top {
   font-size: 12px;
 }
 
-img {
+#block-tiaofu img {
 	max-width: 100%;
-	height: auto;
 }
 
 #block-tiaofu p {
@@ -193,7 +191,6 @@ img {
 }
 
 .swiper-container {
-    width: 600px;
     height: 400px;
 }
 
@@ -209,14 +206,15 @@ img {
 }
 
 .views-element-container li a {
-	/*
 	display: inline-block;
 	vertical-align: bottom;
-	*/
 	max-width: 88%;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	float: left;
+}
+
+.col {
+	overflow: hidden;
 }
 /*
 */
