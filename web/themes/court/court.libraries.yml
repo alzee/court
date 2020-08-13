@@ -17,12 +17,7 @@ swiper-js:
     js/swiper-bundle.min.js: {}
     js/initSwiper.js: {}
 
-home-title-bold-js:
+home-titles-js:
   version: VERSION
   js:
-    js/boldTitle.js: {}
-
-home-title-addNewBadge-js:
-  version: VERSION
-  js:
-    js/addNewBadge.js: {}
+    js/homeTitles.js: {}
