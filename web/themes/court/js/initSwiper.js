@@ -1,32 +1,33 @@
-let xhr = new XMLHttpRequest();
-let url = '/court/slider?_format=json';
-xhr.onreadystatechange = function () {
-  if(xhr.readyState === XMLHttpRequest.DONE){
-    if(xhr.status === 200){
-		initSlider();
+function getSlides() {
+  let xhr = new XMLHttpRequest();
+  let url = '/court/slider?_format=json';
+  xhr.onreadystatechange = function () {
+    if(xhr.readyState === XMLHttpRequest.DONE){
+      if(xhr.status === 200){
+  		initSlides(xhr.response);
 		initSwiper();
+      }
     }
-  }
-};
-xhr.open('GET', url);
-xhr.responseType='json';
-//xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-xhr.send();
+  };
+  xhr.open('GET', url);
+  xhr.responseType='json';
+  //xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.send();
+}
 
-function initSlider() {
+function initSlides(slides) {
   let slider = document.querySelector('.swiper-wrapper');
   let slide = slider.querySelector('.swiper-slide');
 
-  let res = xhr.response;
-  //console.log(res);
-  for(let i = 0; i < res.length; i++) {
+  //console.log(slides);
+  for(let i = 0; i < slides.length; i++) {
     let nSlide = slide.cloneNode(true);
     let a = nSlide.querySelector('a');
     let img = nSlide.querySelector('img');
     let cap = nSlide.querySelector('figcaption');
-    a.href = res[i].view_node;
-    img.src = res[i].field_image;
-    cap.innerText = res[i].title;
+    a.href = slides[i].view_node;
+    img.src = slides[i].field_image;
+    cap.innerText = slides[i].title;
     slider.appendChild(nSlide);
   }
   slide.remove();
@@ -53,34 +54,4 @@ function initSwiper() {
   })
 }
 
-function boldTitle() {
-	let tags = document.getElementsByClassName('tags');
-
-	for(let i = 0; i < tags.length; i++){
-		if(tags[i].innerText.indexOf('重要') !== -1){
-			tags[i].previousElementSibling.classList.add('font-weight-bold');
-		}
-	}
-}
-
-function newBadge() {
-	let date = document.getElementsByClassName('date');
-	let now = new Date;
-	let badge = document.createElement('span');
-	badge.className = "badge badge-danger new-icon";
-	badge.innerText = "NEW";
-	for(let i = 0; i < date.length; i++){
-		let then = new Date(date[i].innerText.trim());
-		let hours = (now - then) / 3600000;
-		console.log(now);
-		console.log(then);
-		console.log(hours);
-		console.log(date[i]);
-		if(hours < 48){
-			date[i].parentNode.appendChild(badge.cloneNode(true));
-		}
-	}
-}
-
-boldTitle();
-newBadge();
+getSlides();
