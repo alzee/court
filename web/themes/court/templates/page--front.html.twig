@@ -3,7 +3,7 @@
   {{ page.header }}
 </header>
   {{ page.breadcrubm }}
-<main class="mt-1">
+<main class="mt-1" id="home">
   {{ page.banner }}
   <section class="row mb-1" id="slider">
     <div class="col">
@@ -111,8 +111,9 @@
 </main>
 {{ page.footer }}
 
+{{ attach_library('court/swiper-css') }}
+{{ attach_library('court/swiper-js') }}
 
 <!--
 	vim:ft=html
 -->
-

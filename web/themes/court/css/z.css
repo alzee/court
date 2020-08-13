@@ -205,7 +205,7 @@ ul.no-padding-top {
     bottom: 0;
 }
 
-.views-element-container li a {
+#home .views-element-container li a {
 	display: inline-block;
 	vertical-align: bottom;
 	max-width: 88%;
