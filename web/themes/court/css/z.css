@@ -94,6 +94,12 @@ li.list-group-item a:hover {
 	color: #121416!important;
 }
 
+.col li a:before {
+	content: "•";
+	margin-right: 5px;
+	color: #7b7b7b;
+}
+
 .col li a {
 	color: #343a40!important;
 }
@@ -190,10 +196,6 @@ ul.no-padding-top {
 	margin-bottom: .25rem!important;
 }
 
-.swiper-container {
-    height: 400px;
-}
-
 #slider figcaption {
     bottom: 0;
     background-color: rgb(78 198 255 / .6);
@@ -216,5 +218,3 @@ ul.no-padding-top {
 .col {
 	overflow: hidden;
 }
-/*
-*/
