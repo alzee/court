@@ -33,11 +33,11 @@
 #}
 <div class="swiper-slide">
   <figure>
-    <a href="{{ fields.view_node.content }}">
-      <img src="{{ fields.field_image.content }}"></img>
+    <a href="{{- fields.view_node.content | striptags -}}">
+      <img src="{{- fields.field_image.content | striptags -}}"></img>
     </a>
     <figcaption class="align-items-center d-flex pl-3 position-absolute w-100">
-    {{ fields.title.content }}
+    {{- fields.title.content | striptags -}}
     </figcaption>
   </figure>
 </div>

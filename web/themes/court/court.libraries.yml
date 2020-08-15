@@ -20,4 +20,4 @@ swiper-js:
 home-titles-js:
   version: VERSION
   js:
-    js/homeTitles.js: {}
+    js/homeTitles.js: {attributes: {defer: true}}
