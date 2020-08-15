@@ -37,7 +37,7 @@ function initSlides(slides) {
 function initSwiper() {
   var swiper = new Swiper('#slider', {
     loop: true,
-	autoHeight: true,
+	//autoHeight: true,
     autoplay: {
         delay: 5000,
     },
