@@ -269,8 +269,8 @@ ul.no-padding-top {
 	font-size: .9em;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+#slider2 .swiper-button-next,
+#slider2 .swiper-button-prev {
 	top: 37%;
 }
 
