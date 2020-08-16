@@ -37,7 +37,6 @@ function initSlides(slides) {
 function initSwiper() {
   var swiper = new Swiper('#slider', {
     loop: true,
-	//autoHeight: true,
     autoplay: {
         delay: 5000,
     },
@@ -47,7 +46,19 @@ function initSwiper() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-      hideOnClick: true,
     },
-  })
+  });
+
+  var swiper2 = new Swiper('#slider2', {
+	slidesPerView: 6,
+    //spaceBetween: 10,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 }
