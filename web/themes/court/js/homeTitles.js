@@ -22,7 +22,7 @@ function boldTitle() {
 }
 
 window.onload = function(){
-  boldTitle();
+  //boldTitle();
   newBadge();
   initSwiper();
 };
