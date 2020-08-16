@@ -219,6 +219,10 @@ ul.no-padding-top {
 	text-overflow: ellipsis;
 }
 
+#block-views-block-shipin-block-1 li a {
+    vertical-align: middle !important;
+}
+
 .col {
 	overflow: hidden;
 }
