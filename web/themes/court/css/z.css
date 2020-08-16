@@ -290,3 +290,11 @@ section#dangjian h2:after {
 section#dangjian a:hover {
 	text-decoration: none;
 }
+
+.swiper-slide figure {
+    margin-bottom: 0px;
+}
+
+#slider .swiper-slide img{
+    height: 416px;
+}
