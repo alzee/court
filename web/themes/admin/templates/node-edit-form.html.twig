@@ -15,19 +15,26 @@
  * @see seven_form_node_form_alter()
  */
 #}
+
 <div class="layout-node-form clearfix">
-  <div class="layout-region layout-region-node-main">
-      {#
-      #}
+  <div class="layout-region layout-region-node-main0">
     {{ form|without('advanced', 'footer', 'actions') }}
   </div>
+      {#
   <div class="layout-region layout-region-node-secondary">
     {{ form.advanced }}
   </div>
+      #}
   <div class="layout-region layout-region-node-footer">
-    <div class="layout-region-node-footer__content">
+    <div class="layout-region-node-footer__content0">
       {{ form.footer }}
       {{ form.actions }}
     </div>
   </div>
 </div>
+{#
+{% for k,v in form.uid %}
+{{ k }}
+{{ v }}
+{% endfor %}
+#}
