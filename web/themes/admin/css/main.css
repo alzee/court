@@ -46,9 +46,21 @@ fieldset#edit-field-tags--wrapper .form-item {
 	font-weight: bold;
 }
 
-/*
-#edit-field-tags,
-#edit-field-tags-wrapper .form-item {
-	display: flex;
+#edit-field-tags-wrapper {
+	/*
+	border-bottom: #656565;
+	border-bottom-style: dashed;
+	border-width: 1px;
+	*/
+	margin-bottom: 5px
 }
-*/
+
+#edit-field-image-wrapper {
+	/*
+	border-top: #656565;
+	border-top-style: dashed;
+	border-width: 1px;
+	*/
+	padding: 5px 0;
+	margin: 5px 0;
+}
