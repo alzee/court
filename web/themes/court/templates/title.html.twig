@@ -1,16 +1,19 @@
 {% set rounded = 'rounded' %}
-{% set color = haveRedBar ? 'bg-danger' : '' %}
-{% if haveRedBar %}
-{% set color = 'bg-danger' %}
-{% set rounded = 'rounded-bottom' %}
-{% endif %}
 
 <div class="rounded overflow-hidden mx-0 py-0 block-title justify-content-between">
-  <div class="{{ color }} w-100" style="height: 5px">
-  </div>
-  <div class="row mx-2">
+  {% if haveRedBar %}
+  {% set rounded = 'rounded-bottom' %}
+  <div class="bg-danger w-100" style="height: 5px"></div>
+  {% endif %}
+  <div class="row mr-2">
     <div class="col-auto py-1 px-4 title-text-bg {{ rounded }}">
+      {% if not haveRedBar %}
+      <div class=" w-100" style="height: 2.5px"></div>
+      {% endif %}
       <span class="text-light SimSun font-weight-bold"> {{ title }} </span>
+      {% if not haveRedBar %}
+      <div class=" w-100" style="height: 2.5px"></div>
+      {% endif %}
     </div>
     <div class="col">
     </div>

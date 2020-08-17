@@ -98,6 +98,7 @@ li.list-group-item a:hover {
 	content: "•";
 	margin-right: 5px;
 	color: #7b7b7b;
+    font-size: 12px;
 }
 
 #block-views-block-shipin-block-1 a:before {
@@ -255,8 +256,13 @@ ul.no-padding-top {
 }
 
 #block-shipin video{
-    width: 257px;
+    width: 100%;
     height: auto;
+}
+
+#block-shouyeshipinqukuaixiafangtupian img {
+    width: 100%;
+    height: 142px;
 }
 
 #block-yewupingtaitupian img{
