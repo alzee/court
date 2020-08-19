@@ -193,7 +193,7 @@ ul.no-padding-top {
   font-size: 12px;
 }
 
-#block-tiaofu img {
+img {
 	max-width: 100%;
 }
 
@@ -250,7 +250,7 @@ ul.no-padding-top {
 
 #block-fayuangaishu p{
     text-align: justify;
-    height: 260px;
+    height: 192px;
     overflow: hidden;
     text-overflow: ellipsis;
 }

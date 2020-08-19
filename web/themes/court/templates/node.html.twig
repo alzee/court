@@ -92,7 +92,7 @@
         {{ content.field_laiyuan }}
         </span>
         <span>
-        作者：{{ author_name }}
+        {{ content.field_zuozhe_}}
         </span>
       </div>
     </div>
@@ -101,8 +101,9 @@
   <div{{ content_attributes }}>
     {{ content.body }}
     <div class="text-secondary text-right my-2">
-      <span>{{ content.field_zerenbianji }} </span>
+      <span>
+        责任编辑：{{ author_name }}
+      </span>
     </div>
   </div>
-
 </article>

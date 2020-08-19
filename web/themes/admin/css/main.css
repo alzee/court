@@ -13,7 +13,7 @@ fieldset#edit-field-tags--wrapper .form-item {
 #edit-uid-wrapper,
 #edit-sticky-wrapper,
 #edit-field-laiyuan-wrapper,
-#edit-field-zerenbianji-wrapper {
+#edit-field-zuozhe-wrapper{
 	display: inline-block;
 	margin-right: 30px;
 }
@@ -25,14 +25,16 @@ fieldset#edit-field-tags--wrapper .form-item {
 
 #edit-field-laiyuan-wrapper label,
 #edit-uid-wrapper label,
-#edit-field-zerenbianji-wrapper label {
+#edit-field-zuozhe-wrapper label {
 	display: inline-block;
 }
 
+/*
 #edit-uid-wrapper label:after {
 	content: "：";
 	margin-left: -1px;
 }
+*/
 
 #edit-field-image-wrapper .form-managed-file {
 }
@@ -61,4 +63,8 @@ fieldset#edit-field-tags--wrapper .form-item {
     */
 	padding: 5px 0;
 	margin: 5px 0;
+}
+
+#edit-body-0-format {
+    display: none;
 }
