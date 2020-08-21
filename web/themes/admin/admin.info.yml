@@ -5,3 +5,6 @@ core_version_requirement: ^8 | ^9
 version: VERSION
 libraries:
   - admin/css
+
+libraries-override:
+  core/jquery: admin/jquery1
